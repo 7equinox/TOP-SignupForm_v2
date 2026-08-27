@@ -7,7 +7,20 @@
   font-display: swap;
 }
 
-h1 {
-    color: red;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.left-container {
+    color: white;
+    background-image: url("./img/photo-1585202900225-6d3ac20a6962.avif");
+}
+
+.logo > h1 {
     font-family: "Norse Bold", sans-serif;
+}
+
+.ccto > a {
+    color: inherit;
 }

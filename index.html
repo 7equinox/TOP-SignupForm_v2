@@ -7,6 +7,53 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Lorem Ipsum</h1>
+    <div class="left-container">
+        <div class="logo">
+            <img src="./img/odin-lined.png" alt="odin logo">
+            <h1>ODIN</h1>
+        </div>
+        <div class="ccto">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></div>
+    </div>
+    <div class="right-container">
+        <div class="paragraph-container">
+            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
+            <h2>You <em>know</em> you want to.</h2>
+        </div>
+        <div class="form-container">
+            <form action="https://httpbin.org" method="post">
+                <fieldset>
+                    <h2>Let's do this!</h2>
+                    <label for="first_name">
+                        FIRST NAME
+                        <input type="text" name="first_name" id="first_name" required>
+                    </label>
+                    <label for="last_name">
+                        LAST NAME
+                        <input type="text" name="last_name" id="last_name" required>
+                    </label>
+                    <label for="email">
+                        EMAIL
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                    <label for="phone_no">
+                        PHONE NUMBER
+                        <input type="tel" name="phone_no" id="phone_no" required>
+                    </label>
+                    <label for="password">
+                        PASSWORD
+                        <input type="password" name="password" id="password" required>
+                    </label>
+                    <label for="confirm_pass">
+                        CONFIRM PASSWORD
+                        <input type="password" name="confirm_pass" id="confirm_pass" required>
+                    </label>
+                </fieldset>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+        <div class="bottom-container">
+            <p>Already have an account? <a href="./">Log In</a></p>
+        </div>
+    </div>
 </body>
 </html>
