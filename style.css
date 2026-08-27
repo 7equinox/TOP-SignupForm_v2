@@ -1,3 +1,11 @@
+:root {
+    --default-padding: 5vw;
+    --primary-color: white;
+    --btn-color: #596D48;
+    --hover-color: rgb(211, 211, 114);
+    --active-color: lightgreen;
+}
+
 @font-face {
   font-family: 'Norse Bold';
   src: url('font/Norsebold.woff2') format('woff2'),
@@ -17,12 +25,12 @@ body {
 
 .left-container {
     padding: 10px 0;
-    color: white;
+    color: var(--primary-color);
     background-image: url("./img/photo-1585202900225-6d3ac20a6962.avif");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 40%;
+    width: 30vw;
     display: inherit;
     flex-direction: column;
     justify-content: end;
@@ -59,4 +67,54 @@ img[alt="odin logo"] {
 
 .ccto > a:active {
     color: green;
+}
+
+.right-container {
+    width: 70vw;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7vh;
+}
+
+.paragraph-container {
+    padding: 0 var(--default-padding);
+}
+
+button[type="submit"] {
+    background-color: var(--btn-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    width: 210px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0 var(--default-padding);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--hover-color);
+}
+
+button[type="submit"]:active {
+    background-color: var(--active-color);
+}
+
+a[href="./"] {
+    font-weight: 800;
+    font-style: bold;
+    color: var(--btn-color);
+    text-decoration: none;
+}
+
+a[href="./"]:hover {
+    color: var(--hover-color);
+}
+
+a[href="./"]:active {
+    color: var(--active-color);
+}
+.form-container > p {
+    padding: 0 var(--default-padding);
 }
