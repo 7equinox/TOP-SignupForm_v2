@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('font/Norsebold.woff2') format('woff2'),
+       url('font/Norsebold.woff') format('woff');
+  font-weight: 400;
+  font-style: bold;
+  font-display: swap;
+}
+
 h1 {
     color: red;
+    font-family: "Norse Bold", sans-serif;
 }
